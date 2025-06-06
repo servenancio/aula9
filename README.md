@@ -255,7 +255,7 @@ Neste documento, você encontrará **cinco desafios de CSS** que devem ser resol
 
 ---
 
-## 🔷 Desafio 1: Layout Responsivo
+## Desafio 1: Layout Responsivo
 
 ### ✅ Objetivo:
 Transformar um layout de **3 colunas em desktop** para **2 colunas no tablet** e **1 coluna no mobile**, usando CSS Grid e media queries.
@@ -303,7 +303,9 @@ Transformar um layout de **3 colunas em desktop** para **2 colunas no tablet** e
 ```
 
 ### 🎯 Solução esperada
-<img src="https://github.com/servenancio/aula9/blob/main/assets/desafio1.PNG" />
+<img src="https://github.com/servenancio/aula9/blob/main/desafio1_1.PNG" />
+<img src="https://github.com/servenancio/aula9/blob/main/desafio1_2.PNG" />
+<img src="https://github.com/servenancio/aula9/blob/main/desafio1_3.PNG" />
 
 ---
 
@@ -361,7 +363,7 @@ Criar um **modal centralizado na tela** com `display: flex`.
 ```
 
 ### 🎯 Solução esperada
-<img src="https://github.com/servenancio/aula9/blob/main/assets/desafio2.PNG" />
+<img src="https://github.com/servenancio/aula9/blob/main/desafio2.PNG" />
 
 ---
 
@@ -402,14 +404,14 @@ Aplicar estilos para tornar um formulário mais legível e visualmente agradáve
 ```
 
 ### 🎯 Solução esperada
-<img src="https://github.com/servenancio/aula9/blob/main/assets/desafio3.PNG" />
+<img src="https://github.com/servenancio/aula9/blob/main/desafio4.PNG" />
 
 ---
 
 ## 🔷 Desafio 4: Card com Imagem e Texto Sobreposto
 
 ### ✅ Objetivo:
-Criar um **card com imagem de fundo** e **texto centralizado sobreposto**.
+Criar um **card com imagem de fundo**, **texto centralizado sobreposto** e **legenda**.
 
 ### 🧱 HTML Base
 ```html
@@ -417,29 +419,41 @@ Criar um **card com imagem de fundo** e **texto centralizado sobreposto**.
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Card com Imagem</title>
+  <title>Galeria de Cards</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Galeria de Destinos</h1>
-  <div class="card">
-    <img src="https://placehold.co/400x200" alt="Imagem de uma praia ensolarada">
-    <div class="card-text">Praia do Sol</div>
+  <h1>Destinos Populares</h1>
+  <div class="card-container">
+    <div class="card">
+      <img src="https://placehold.co/300x180" alt="Imagem 1">
+      <div class="card-title">Montanhas</div>
+      <div class="card-caption">Trilhas e aventuras ao ar livre</div>
+    </div>
+    <div class="card">
+      <img src="https://placehold.co/300x180" alt="Imagem 2">
+      <div class="card-title">Praia</div>
+      <div class="card-caption">Relaxamento e sol o dia todo</div>
+    </div>
+    <div class="card">
+      <img src="https://placehold.co/300x180" alt="Imagem 3">
+      <div class="card-title">Cidade</div>
+      <div class="card-caption">Cultura, arte e gastronomia</div>
+    </div>
   </div>
-  <p>Explore nossos pacotes de viagem e viva experiências incríveis!</p>
 </body>
 </html>
 ```
 
 ### 🎯 Solução esperada
-<img src="https://github.com/servenancio/aula9/blob/main/assets/desafio4.PNG" />
+<img src="https://github.com/servenancio/aula9/blob/main/desafio3.PNG" />
 
 ---
 
 ## 🔷 Desafio 5: Galeria de Imagens com Grid Responsivo
 
 ### ✅ Objetivo:
-Organizar uma galeria de imagens com display: grid, ajustando o número de colunas conforme a largura da tela (sem media queries explícitas).
+Organizar uma galeria de imagens com display: grid, ajustando o número de colunas conforme a largura da tela **(sem media queries explícitas)**.
 
 ### 🧱 HTML Base
 ```html
@@ -466,7 +480,7 @@ Organizar uma galeria de imagens com display: grid, ajustando o número de colun
 
 ### 🎯 Solução esperada
 
-<img src="https://github.com/servenancio/aula9/blob/main/assets/desafio5.PNG" />
+<img src="https://github.com/servenancio/aula9/blob/main/desafio5.PNG" />
 
 ---
 
