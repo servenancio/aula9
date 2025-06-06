@@ -307,6 +307,39 @@ Transformar um layout de **3 colunas em desktop** para **2 colunas no tablet** e
 <img src="https://github.com/servenancio/aula9/blob/main/desafio1_2.PNG" />
 <img src="https://github.com/servenancio/aula9/blob/main/desafio1_3.PNG" />
 
+### ✔️ Gabarito
+```css
+body {
+  font-family: sans-serif;
+  margin: 30px;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding-top: 15px;
+}
+
+.col {
+  background-color: #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+```
 ---
 
 ## 🔷 Desafio 2: Modal com Flexbox
@@ -365,6 +398,69 @@ Criar um **modal centralizado na tela** com `display: flex`.
 ### 🎯 Solução esperada
 <img src="https://github.com/servenancio/aula9/blob/main/desafio2.PNG" />
 
+### ✔️ Gabarito
+```css
+body, html {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: #0066cc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100vw;
+  
+}
+
+.modal {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px black;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+.modal-actions {
+  margin-top: 20px;
+}
+
+.modal-actions button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-actions button:last-child {
+  background-color: #0066cc;
+  color: white;
+}
+
+.modal-actions button:first-child {
+  background-color: #ccc;
+}
+```
 ---
 
 ## 🔷 Desafio 3: Formulário com Estilização Coesa
@@ -406,6 +502,58 @@ Aplicar estilos para tornar um formulário mais legível e visualmente agradáve
 ### 🎯 Solução esperada
 <img src="https://github.com/servenancio/aula9/blob/main/desafio4.PNG" />
 
+### ✔️ Gabarito
+```css
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.formulario {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.formulario label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.formulario input[type="checkbox"] {
+  margin-top: 15px;
+}
+
+.formulario button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+```
 ---
 
 ## 🔷 Desafio 4: Card com Imagem e Texto Sobreposto
@@ -448,6 +596,64 @@ Criar um **card com imagem de fundo**, **texto centralizado sobreposto** e **leg
 ### 🎯 Solução esperada
 <img src="https://github.com/servenancio/aula9/blob/main/desafio3.PNG" />
 
+### ✔️ Gabarito
+```css
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+  pointer-events: none;
+}
+
+.card-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+```
 ---
 
 ## 🔷 Desafio 5: Galeria de Imagens com Grid Responsivo
@@ -482,6 +688,31 @@ Organizar uma galeria de imagens com display: grid, ajustando o número de colun
 
 <img src="https://github.com/servenancio/aula9/blob/main/desafio5.PNG" />
 
+### ✔️ Gabarito
+```css
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+}
+
+```
 ---
 
 # BÔNUS: Canvas + P5.js
