@@ -303,7 +303,7 @@ Transformar um layout de **3 colunas em desktop** para **2 colunas no tablet** e
 ```
 
 ### 🎯 Solução esperada
-
+<img src="https://github.com/servenancio/aula9/blob/main/assets/desafio1.PNG" />
 
 ---
 
@@ -351,8 +351,8 @@ Criar um **modal centralizado na tela** com `display: flex`.
       <h2>Confirmação de Inscrição</h2>
       <p>Você tem certeza que deseja se inscrever neste curso?</p>
       <div class="modal-actions">
-        <button>Sim, inscrever</button>
         <button>Cancelar</button>
+        <button>Sim, inscrever</button>
       </div>
     </div>
   </div>
@@ -361,7 +361,7 @@ Criar um **modal centralizado na tela** com `display: flex`.
 ```
 
 ### 🎯 Solução esperada
-
+<img src="https://github.com/servenancio/aula9/blob/main/assets/desafio2.PNG" />
 
 ---
 
@@ -402,7 +402,7 @@ Aplicar estilos para tornar um formulário mais legível e visualmente agradáve
 ```
 
 ### 🎯 Solução esperada
-
+<img src="https://github.com/servenancio/aula9/blob/main/assets/desafio3.PNG" />
 
 ---
 
@@ -432,7 +432,7 @@ Criar um **card com imagem de fundo** e **texto centralizado sobreposto**.
 ```
 
 ### 🎯 Solução esperada
-
+<img src="https://github.com/servenancio/aula9/blob/main/assets/desafio4.PNG" />
 
 ---
 
@@ -465,6 +465,8 @@ Organizar uma galeria de imagens com display: grid, ajustando o número de colun
 ```
 
 ### 🎯 Solução esperada
+
+<img src="https://github.com/servenancio/aula9/blob/main/assets/desafio5.PNG" />
 
 ---
 
